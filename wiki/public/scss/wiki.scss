@@ -77,6 +77,7 @@ textarea.wiki-content {
 		}
 	}
 }
+
 .wiki-revision-meta {
 	font-size: $font-size-sm;
 	display: flex;
@@ -97,9 +98,11 @@ textarea.wiki-content {
 
 	padding-left: 0.25rem;
 }
+
 .sidebar-group {
 	ul.list-unstyled {
 		padding-left: 0.65rem;
+
 		ul {
 			padding-left: 0.65rem;
 		}
@@ -122,6 +125,7 @@ textarea.wiki-content {
 		cursor: pointer;
 		flex-basis: 100%;
 		flex-wrap: wrap;
+
 		.h6 {
 			font-size: $font-size-sm;
 			margin-bottom: 0;
@@ -139,6 +143,7 @@ textarea.wiki-content {
 		letter-spacing: -0.011em;
 		padding: 0.375rem 0.8rem 0.375rem 0.8rem;
 		margin-right: 0.8rem;
+
 		div {
 			display: flex;
 		}
@@ -171,6 +176,7 @@ textarea.wiki-content {
 .sidebar-item div {
 	display: flex;
 }
+
 .sidebar-column {
 	width: clamp(240px, 20%, 320px);
 }
@@ -183,15 +189,18 @@ textarea.wiki-content {
 	height: 90vh;
 	margin-bottom: 0;
 	margin-top: 3.5rem;
+
 	.web-sidebar {
 		margin-bottom: 8px;
 		margin-right: -0.5rem;
 		padding-top: 0;
 		padding-bottom: 0;
-		.sidebar-items > .list-unstyled > .sidebar-item {
+
+		.sidebar-items>.list-unstyled>.sidebar-item {
 			margin-left: -0.5rem;
 		}
-		.sidebar-items > .list-unstyled > .sidebar-group {
+
+		.sidebar-items>.list-unstyled>.sidebar-group {
 			margin-left: -0.7rem;
 		}
 	}
@@ -211,10 +220,11 @@ textarea.wiki-content {
 // navbar
 .navbar-nav {
 	height: 100%;
+
 	.dropdown-menu {
-	    position: sticky;
+		position: sticky;
 	}
-	
+
 }
 
 .nav-item {
@@ -225,6 +235,7 @@ textarea.wiki-content {
 		height: 100%;
 		padding-right: 0px;
 		padding-left: 0px;
+
 		.dropdown {
 			height: 100%;
 
@@ -254,6 +265,7 @@ textarea.wiki-content {
 		height: 100%;
 	}
 }
+
 .navbar {
 	width: 100%;
 	position: fixed;
@@ -292,6 +304,7 @@ textarea.wiki-content {
 	flex-grow: 100;
 	width: clamp(240px, 60%, 870px);
 	text-align: left;
+
 	.page-content-wrapper {
 		margin-top: 3.5rem;
 		padding-top: 2rem;
@@ -303,7 +316,7 @@ textarea.wiki-content {
 	flex-wrap: nowrap;
 }
 
-.doc-content .from-markdown > :first-child {
+.doc-content .from-markdown> :first-child {
 	margin-top: 0;
 }
 
@@ -319,6 +332,7 @@ textarea.wiki-content {
 .page-toc {
 	width: clamp(192px, 20%, 240px);
 	font-size: $font-size-xs;
+
 	h5 {
 		font-size: $font-size-xs;
 	}
@@ -329,9 +343,12 @@ textarea.wiki-content {
 		margin-bottom: 0;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
+
 		ul {
 			padding-bottom: 0;
 			margin-bottom: 0;
+			overflow-y: scroll;
+			height: calc(100vh - 300px);
 		}
 
 		.h5 {
@@ -361,12 +378,12 @@ textarea.wiki-content {
 	}
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
 	content: "";
 	display: none;
 }
 
-.breadcrumb-item + .breadcrumb-item {
+.breadcrumb-item+.breadcrumb-item {
 	padding-left: 0;
 }
 
@@ -380,7 +397,7 @@ textarea.wiki-content {
 	padding-right: 0.5rem;
 }
 
-.sidebar-group > ul {
+.sidebar-group>ul {
 	margin-bottom: 0.5rem;
 }
 
@@ -402,7 +419,8 @@ breadcrumbs
 */
 
 .doc-content .breadcrumb-container {
-	margin-top: 0rem; /* spacing adjusment for breadcrumb */
+	margin-top: 0rem;
+	/* spacing adjusment for breadcrumb */
 	margin: 0;
 	padding: 0;
 }
@@ -422,7 +440,8 @@ navbar
 .navbar .navbar-light .navbar-expand-lg {
 	width: 100%;
 	position: fixed;
-	top: 0; /*ensure navbar stays affixes to the top*/
+	top: 0;
+	/*ensure navbar stays affixes to the top*/
 	left: 0;
 	right: 0;
 }
@@ -436,11 +455,12 @@ navbar
 		padding-left: 0;
 		padding-right: 0;
 	}
+
 	.web-sidebar {
 		padding-top: 0;
 	}
 
-	.web-sidebar > a {
+	.web-sidebar>a {
 		display: none;
 	}
 
@@ -449,6 +469,7 @@ navbar
 	}
 
 	.wiki-footer {
+
 		.btn.left,
 		.btn.right {
 			width: 100%;
@@ -459,9 +480,11 @@ navbar
 	.nav-item {
 		margin-left: 10px;
 	}
+
 	.search-nav-item {
 		height: 2.2rem;
 	}
+
 	// #dropdownMenuSearch {
 	//   margin-right: 20px;
 	// }
@@ -500,18 +523,18 @@ navbar
 
 .count {
 	font-size: var(--text-xs);
-    background-color: var(--gray-500);
-    border-radius: var(--border-radius-sm);
-    color: var(--gray-50);
-    padding: 0 var(--padding-xs);
-    margin-right: var(--margin-xs);
+	background-color: var(--gray-500);
+	border-radius: var(--border-radius-sm);
+	color: var(--gray-50);
+	padding: 0 var(--padding-xs);
+	margin-right: var(--margin-xs);
 }
 
-img::after{
+img::after {
 	content: '';
 }
 
-img[alt]::after{
+img[alt]::after {
 	width: unset;
 	height: unset;
 }
@@ -531,6 +554,7 @@ h1 {
 		margin-top: 3.5rem;
 		margin-bottom: 1.25rem;
 	}
+
 	@include media-breakpoint-up(xl) {
 		font-size: 2.5rem;
 		margin-top: 3.5rem;
@@ -548,6 +572,7 @@ h2 {
 		margin-top: 4rem;
 		margin-bottom: 0.75rem;
 	}
+
 	@include media-breakpoint-up(xl) {
 		font-size: 2rem;
 		margin-top: 4rem;
@@ -564,6 +589,7 @@ h3 {
 		font-size: 1.4rem;
 		margin-top: 2.5rem;
 	}
+
 	@include media-breakpoint-up(xl) {
 		font-size: 1.4rem;
 		margin-top: 2.5rem;
@@ -579,6 +605,7 @@ h4 {
 		font-size: 1.3rem;
 		margin-top: 2.5rem;
 	}
+
 	@include media-breakpoint-up(xl) {
 		font-size: 1.3rem;
 		margin-top: 2.5rem;
